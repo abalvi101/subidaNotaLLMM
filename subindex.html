@@ -21,7 +21,7 @@
            
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="subindex.html">
                 <img src="./images/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
                 Conoce Juegos
             </a>
@@ -29,10 +29,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="subindex.html">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./routes/index2.html">Link</a>
+                    <a class="nav-link" href="subindex.html">Link</a>
                     </li>
                     <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,19 +47,19 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>  
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="busqueda">
+                    <input type="button" value="Buscar" class="btn btn-outline-success" onclick="buscar()"> 
                 </form>
             </div>
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container" id="juegos">
 
         <h2 class="mt-4 mb-3">Juegos destacados</h2>
 
         <div class="row">
-            <div class="col-12 col-lg-6 p-2">
+            <div class="col-12 col-lg-6 p-2" id="league of legends">
                 <article class="card h-100 shadow">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex">
@@ -121,7 +121,7 @@
                 </article>
             </div>
 
-            <div class="col-12 col-lg-6 p-2">
+            <div class="col-12 col-lg-6 p-2" id="valorant">
                 <article class="card h-100 shadow">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex">
@@ -183,7 +183,7 @@
                 </article>
             </div>
 
-            <div class="col-12 col-lg-6 p-2">
+            <div class="col-12 col-lg-6 p-2" id="minecraft">
                 <article class="card h-100 shadow">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex">
@@ -245,7 +245,7 @@
                 </article>
             </div>
 
-            <div class="col-12 col-lg-6 p-2">
+            <div class="col-12 col-lg-6 p-2" id="fortnite">
                 <article class="card h-100 shadow">
                     <div class="card-body d-flex flex-column">
                         <div class="d-flex">
@@ -310,6 +310,9 @@
         </div>
 
     </main>
+
+    <div class="container" id="resultado"></div>
+    <script type="text/javascript" src="indexation.js"></script>
 
 </body>
 </html>
